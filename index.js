@@ -11,7 +11,7 @@ dotenv.config();
 const app = express();
 
 // Use CORS middleware for handling Cross-Origin requests
-app.use(cors({ origin: true }));
+app.use(cors({ origin:  'https://z-eccomerce.netlify-app.netlify.app' }));
 
 
 // Parse incoming request bodies in a middleware before your handlers, available under the req.body property
@@ -44,7 +44,7 @@ app.post('/create-payment-intent', async (req, res) => {
 
 // Example route
 app.get('/', (req, res) => {
-  res.status(200).send('Hello from the local backend!');
+  res.status(200).send('Hello from the backend!');
 });
 
 // Start the server on a specified port
