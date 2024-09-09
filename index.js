@@ -13,7 +13,7 @@ const app = express();
 // Use CORS middleware for handling Cross-Origin requests
 // app.use(cors({ origin:  true }));
 
-app.use(cors({ origin:  'https://z-eccom2.netlify.app/' }));
+app.use(cors({ origin:  'https://z-eccom2.netlify.app' }));
 
 // Parse incoming request bodies in a middleware before your handlers, available under the req.body property
 app.use(express.json());
