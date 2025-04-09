@@ -5,7 +5,7 @@ const bodyParser = require('body-parser');
 const mongoose = require('mongoose');
 const dotenv = require('dotenv');
 
-const Payment = require('./models/Payment');
+const Payment = require('./src/models/Payment');
 
 dotenv.config();
 
